@@ -3,7 +3,7 @@ a=open("yazi.txt")
 x=a.read()
 a.close()
 y=""
-n=int(input("Yazýyý girin"))
+n=int(input("Yazi girin"))
 for i in range(0,n):
 	x=hashlib.md5(x.encode('utf-8')).hexdigest()
 	y=y+x[7]
